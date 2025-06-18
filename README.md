@@ -5,7 +5,7 @@ This project provides a QA and evaluation interface for the **Nexus AI Agent** u
 
 ---
 
-## 🚀 Features
+##  Features
 
 - ✅ Live integration with the Nexus agent via API
 - ✅ DeepEval metrics (faithfulness, relevancy, hallucination detection, etc.)
@@ -64,7 +64,7 @@ OPENAI_API_KEY=your-openai-api-key-here  # Optional for advanced metrics
 
 ---
 
-## 🧪 Run the Streamlit App
+##  Run the Streamlit App
 
 ```bash
 streamlit run app.py
@@ -90,7 +90,7 @@ Access the app at [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 💡 Use Cases
+##  Use Cases
 
 - QA team reviewing LLM answers before production
 - Engineering teams monitoring LLM performance over time
@@ -98,14 +98,14 @@ Access the app at [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 📌 Notes
+##  Notes
 
 - This is optimized for evaluating **Nexus AI Agent** with context-aware questions and expected answers.
 - You can run tests manually via `test_agent.py` or use the UI.
 
 ---
 
-## 📬 Contact
+##  Contact
 
 Built by Nabih and the Nexus AI Engineering team  
 For support or feedback, contact: [support.digitalnexus@digitalrealty.com](mailto:support.digitalnexus@digitalrealty.com)
