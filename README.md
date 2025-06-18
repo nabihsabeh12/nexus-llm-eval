@@ -1,5 +1,5 @@
 
-# Nexus LLM Evaluation Dashboard
+# Nexus DeepEval
 
 This project provides a QA and evaluation interface for the Digital Nexus Agent using [DeepEval](https://deepeval.com) metrics. It allows you to test your agent’s responses, assess their quality, and visualize evaluation results directly from a Streamlit UI.
 
