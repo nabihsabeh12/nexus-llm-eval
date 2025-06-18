@@ -1,0 +1,12 @@
+# Do not push your API keys or environment
+.env
+
+# Ignore Python virtual environments
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# OS-specific junk
+.DS_Store
