@@ -1,35 +1,35 @@
-readme_content = """
+
 # Nexus LLM Evaluation Dashboard
 
-This project provides a QA and evaluation interface for the **Nexus AI Agent** using [DeepEval](https://deepeval.com) metrics. It allows you to test your agent’s responses, assess their quality, and visualize evaluation results directly from a Streamlit UI.
+This project provides a QA and evaluation interface for the Digital Nexus Agent using [DeepEval](https://deepeval.com) metrics. It allows you to test your agent’s responses, assess their quality, and visualize evaluation results directly from a Streamlit UI.
 
 ---
 
-##  Features
+## Features
 
--  Live integration with the Nexus agent via API
--  DeepEval metrics (faithfulness, relevancy, hallucination detection, etc.)
--  Dynamic explanations for each score
--  Graceful error handling and real-time feedback
--  Streamlit interface for technical and non-technical stakeholders
+- Live integration with Nexus agent via API
+- DeepEval metrics (faithfulness, relevancy, hallucination detection, etc.)
+- Dynamic explanations for each score
+- Graceful error handling and real-time feedback
+- Streamlit interface for technical and non-technical stakeholders
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 deepeval_nexus_test/
 │
 ├── app.py              # Streamlit UI for evaluation
 ├── test_agent.py       # CLI-based test runner
-├── .env                # Stores API keys and endpoint
-├── venv/               # Virtual environment
+├── .env.example        # Sample environment config (safe for sharing)
+├── venv/               # Virtual environment (ignored)
 └── README.md           # This file
 ```
 
 ---
 
-##  Setup Instructions
+## Setup Instructions
 
 ### 1. Clone this repo (or download locally)
 
@@ -46,7 +46,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-*(If `requirements.txt` doesn't exist yet, manually install:)*
+If `requirements.txt` doesn't exist yet, manually install:
 
 ```bash
 pip install streamlit deepeval openai python-dotenv requests
@@ -54,7 +54,13 @@ pip install streamlit deepeval openai python-dotenv requests
 
 ### 4. Configure environment variables
 
-Create a `.env` file in the root folder with the following:
+Create a `.env` file using the `.env.example` template:
+
+```bash
+cp .env.example .env
+```
+
+Then fill in your actual credentials:
 
 ```env
 API_URL=https://your-nexus-api.azurewebsites.net/api/aisearch
@@ -64,17 +70,17 @@ OPENAI_API_KEY=your-openai-api-key-here  # Optional for advanced metrics
 
 ---
 
-##  Run the Streamlit App
+## Run the Streamlit App
 
 ```bash
 streamlit run app.py
 ```
 
-Access the app at [http://localhost:8501](http://localhost:8501)
+Then open your browser to: `http://localhost:8501`
 
 ---
 
-##  Metrics Evaluated
+## Metrics Evaluated
 
 | Metric                | Description                                                                |
 |-----------------------|-----------------------------------------------------------------------------|
@@ -84,13 +90,13 @@ Access the app at [http://localhost:8501](http://localhost:8501)
 | Contextual Precision   | Ensures no extra, unsupported info is added                                |
 | Toxicity               | Flags unsafe or offensive language                                          |
 | Bias                   | Detects gender/racial bias                                                  |
-| *(Optional)* Role Adherence | Checks if the agent stays in its persona (e.g., Sales Assistant)     |
-| *(Optional)* Summarization   | Evaluates summary quality                                              |
-| *(Optional)* Task Completion | Checks if the response finishes the intended task                    |
+| (Optional) Role Adherence | Checks if the agent stays in its persona (e.g., Sales Assistant)     |
+| (Optional) Summarization   | Evaluates summary quality                                              |
+| (Optional) Task Completion | Checks if the response finishes the intended task                    |
 
 ---
 
-##  Use Cases
+## Use Cases
 
 - QA team reviewing LLM answers before production
 - Engineering teams monitoring LLM performance over time
@@ -98,20 +104,14 @@ Access the app at [http://localhost:8501](http://localhost:8501)
 
 ---
 
-##  Notes
+## Notes
 
-- This is optimized for evaluating **Nexus AI Agent** with context-aware questions and expected answers.
-- You can run tests manually via `test_agent.py` or use the UI.
+- This is optimized for evaluating Nexus AI Agent with context-aware questions and expected answers.
+- You can run tests manually via `test_agent.py` or use the Streamlit UI.
 
 ---
 
-##  Contact
+## Contact
 
 Built by Nabih and the Nexus AI Engineering team  
-For support or feedback, contact: [support.digitalnexus@digitalrealty.com](mailto:support.digitalnexus@digitalrealty.com)
-"""
 
-with open("/mnt/data/README.md", "w") as f:
-    f.write(readme_content)
-
-"/mnt/data/README.md"
