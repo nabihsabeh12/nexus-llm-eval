@@ -7,15 +7,15 @@ This project provides a QA and evaluation interface for the **Nexus AI Agent** u
 
 ##  Features
 
-- ✅ Live integration with the Nexus agent via API
-- ✅ DeepEval metrics (faithfulness, relevancy, hallucination detection, etc.)
-- ✅ Dynamic explanations for each score
-- ✅ Graceful error handling and real-time feedback
-- ✅ Streamlit interface for technical and non-technical stakeholders
+-  Live integration with the Nexus agent via API
+-  DeepEval metrics (faithfulness, relevancy, hallucination detection, etc.)
+-  Dynamic explanations for each score
+-  Graceful error handling and real-time feedback
+-  Streamlit interface for technical and non-technical stakeholders
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 deepeval_nexus_test/
@@ -29,7 +29,7 @@ deepeval_nexus_test/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone this repo (or download locally)
 
@@ -74,7 +74,7 @@ Access the app at [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 🧠 Metrics Evaluated
+##  Metrics Evaluated
 
 | Metric                | Description                                                                |
 |-----------------------|-----------------------------------------------------------------------------|
